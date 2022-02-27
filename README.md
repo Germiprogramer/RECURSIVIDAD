@@ -76,11 +76,14 @@ fichas = ["R", "A", "V"]
 
 tablero = []
 
-tablero.append(fichas[randint(0,2)])
+numerofichas = int(input("¿CON CUANTAS FICHAS DESEAS JUGAR?  "))
 
+def generartablero(fichas, tablero, indice, numerofichas):
+    indice += 1
+    if indice <= numerofichas:
+        tablero.append(fichas[randint(0,2)])
+        generartablero(fichas, tablero, indice, numerofichas)
+
+generartablero(fichas, tablero, 0, numerofichas)
 print(tablero)
-
-numerofichas = input("¿CON CUANTAS FICHAS DESEAS JUGAR?" )
-
-def generartablero(fichas, tablero):
 ```
