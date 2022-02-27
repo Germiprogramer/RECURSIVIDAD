@@ -78,6 +78,7 @@ tablero = []
 
 numerofichas = int(input("¿CON CUANTAS FICHAS DESEAS JUGAR?  "))
 
+
 def generartablero(fichas, tablero, indice, numerofichas):
     indice += 1
     if indice <= numerofichas:
@@ -86,4 +87,19 @@ def generartablero(fichas, tablero, indice, numerofichas):
 
 generartablero(fichas, tablero, 0, numerofichas)
 print(tablero)
+
+def ordenar(fichas, tablero, indicemin, indicemax, numerofichas):
+    if tablero[indicemax] == "R" and tablero[indicemin] == "V" and indicemax>indicemin:
+        tablero[indicemin] = "R"
+        tablero[indicemax] = "V"
+        print(tablero)
+    if indicemin < (numerofichas-1):
+        indicemin +=1
+        indicemax -=1
+        print(indicemin)
+        ordenar(fichas, tablero, indicemin, indicemax, numerofichas)
+    
+    
+
+ordenar(fichas, tablero, 0, (numerofichas-1), numerofichas)
 ```
