@@ -1,5 +1,7 @@
 # RECURSIVIDAD
 
+La dirección a este repositorio es la siguiente https://github.com/Germiprogramer/RECURSIVIDAD.git
+
 EJERCICIO 1
 * Empleando una función recursiva en la cual varía el índice de la tabla, se ha comparado si el elemento elegido es igual a alguno de los elementos de la tabla.
 ```
