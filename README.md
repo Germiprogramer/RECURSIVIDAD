@@ -69,6 +69,8 @@ print("TRAS PASAR TODOSLOS FILTROS, LA CADENA INTRODUCIDA SÍ ES UN PALÍNDROMO"
 
 EJERCICIO 3
 
+* Se ha intentado realizar el ejercicio, pero no se ha podido acabar al completo debido a la dificultad de este. Sin embargo, se ha realizado el tablero inicial haciendo uso de recursividad.
+
 ```
 from random import randint
 
