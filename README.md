@@ -28,6 +28,22 @@ def mayus(entrada):
 
 entrada = mayus(entrada)
 
-print(entrada)
+longitud = (len(entrada)-1)
+indiceizquierda = 0
+indicederecha = longitud
+
+def imagen(entrada, indicederecha, indiceizquierda):
+    if indiceizquierda < longitud and indicederecha > 0:
+        indiceizquierda +=1
+        indicederecha -=1
+        if entrada[indiceizquierda] == entrada[indicederecha]:
+            imagen(entrada, indicederecha, indiceizquierda)
+            pass
+        else:
+            quit()
+
+imagen(entrada, indicederecha, indiceizquierda)
+
+print("TRAS PASAR TODOSLOS FILTROS, LA CADENA INTRODUCIDA SÍ ES UN PALÍNDROMO")
 
 ```
