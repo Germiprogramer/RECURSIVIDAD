@@ -4,29 +4,15 @@ EJERCICIO 1
 ```
 elemento = input("Selecciona el elemento que quieres buscar en la tabla: ")
 
-tabla = [1,2,3,4,5]
-
-indice = 0
-resultado = "a"
-def busqueda(tabla, elemento, indice, resultado):
-    if elemento == tabla[indice]:
-        print("el elemento se encuentra en la tabla")
+def busqueda(tabla, elemento, indice):
+    if elemento == str(tabla[indice]):
+        print("EL ELEMENTO SE ENCUENTRA EN LA TABLA")
     else:
         if indice < (len(tabla)-1):
             indice += 1
-            resultado = 1
-            print(resultado)
-            busqueda(tabla, elemento, indice, resultado)
-        else:
-            pass
-    return resultado
+            busqueda(tabla, elemento, indice)
 
-busqueda(tabla, elemento, indice, resultado)
-
-print(resultado)
-
-if resultado == 1:
-    print("el elemento no pertenece a la tabla")
+busqueda([1,2,3,4,5], elemento, 0)
 ```   
     
 EJERCICIO 2
