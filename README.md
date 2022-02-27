@@ -1,5 +1,12 @@
 # RECURSIVIDAD
 
+EJERCICIO 1
+
+tabla = [1, 2, 3, 4, 5]
+
+def busqueda(tabla):
+    
+
 EJERCICIO 2
 * Para realizar el ejercicio se ha tenido que hacer pasar a la cadena de texto por cuatro filtros. El primero era comprobar si tenía carácteres alfanuméricos o no, para lo que se ha usado la función isalnum(). El segundo y el tercero consistían en convertir los acentos en letras átonas (iteración en un diccionario), y las minúsculas en mayusculas (upper()). Finalmente, para comprobar si la palabra era un palíndromo, se ha realizado una función recursiva que compara los índices del elemento de entrada.
 ```
