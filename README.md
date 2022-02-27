@@ -64,3 +64,21 @@ imagen(entrada, indicederecha, indiceizquierda)
 print("TRAS PASAR TODOSLOS FILTROS, LA CADENA INTRODUCIDA SÍ ES UN PALÍNDROMO")
 
 ```
+
+EJERCICIO 3
+
+```
+from random import randint
+
+fichas = ["R", "A", "V"]
+
+tablero = []
+
+tablero.append(fichas[randint(0,2)])
+
+print(tablero)
+
+numerofichas = input("¿CON CUANTAS FICHAS DESEAS JUGAR?" )
+
+def generartablero(fichas, tablero):
+```
